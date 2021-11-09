@@ -10,9 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import django_heroku
 from pathlib import Path
 from django.conf import settings
-import django_heroku
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -166,3 +166,6 @@ try:
     from .local_settings import *
 except ImportError:
     pass
+
+# Configure Django App for Heroku.
+django_heroku.settings(locals())
