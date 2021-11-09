@@ -155,8 +155,9 @@ django_heroku.settings(locals())
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # redis settings
-REDIS_HOST = "localhost"
-REDIS_PORT = "6379"
+REDIS_HOST = "ec2-18-211-176-4.compute-1.amazonaws.com"
+REDIS_PORT = "29230"
+
 # celery settings
 CELERY_BROKER_URL = "redis://"+REDIS_HOST+":"+REDIS_PORT
 CELERY_RESULT_BACKEND = "redis://"+REDIS_HOST+":"+REDIS_PORT
