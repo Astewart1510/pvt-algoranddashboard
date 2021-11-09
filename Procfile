@@ -1,2 +1,3 @@
 release: python manage.py migrate
-web: gunicorn Hogwarts.wsgi --log-file -
+web: gunicorn algorand_dashboard.wsgi --log-file -
+worker: celery worker --app=tasks.app
