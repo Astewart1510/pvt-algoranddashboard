@@ -47,8 +47,8 @@
     "build-package": "npm run build-package-css && babel src --out-dir dist"
   },
   "engines": {
-    "node": "13.8.0",   
-    "npm": "7.8.0"     
+    "node": "13.8.0",
+    "npm": "7.8.0"
   },
   "repository": {
     "type": "git",
@@ -80,5 +80,4 @@
     ],
     "development": []
   }
-  
 }

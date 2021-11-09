@@ -1,6 +1,7 @@
 localPythonEnv/
 venv/
 **/__pycache__
+node_modules/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
